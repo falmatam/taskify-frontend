@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import axios from 'axios';
 import { URL } from "../App";
 import loadingImg from '../assets/loader.gif';
+import logo from '../assets/taskifye.png';
 
 
 const TaskList = () => {
@@ -121,7 +122,7 @@ const TaskList = () => {
 
     return (
         <div>
-           <h2>Task Manager</h2> 
+           <img src={logo} className="imgresp"></img>
            <TaskForm 
                 name={name} 
                 handleInputChange={handleInputChange}
